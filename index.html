@@ -9,6 +9,7 @@
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
+        color: #333; /* Adjusted text color for better contrast */
       }
       header {
         background: url("header-background.jpg") no-repeat center/cover;
@@ -36,6 +37,16 @@
         padding: 10px;
         text-align: center;
         color: #fff; /* Adjusted text color for better contrast */
+      }
+      /* Added a label style to improve contrast and address the missing label issue */
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #fff;
+      }
+      /* Adjusted heading and paragraph text color for better contrast */
+      h1, h2, p {
+        color: #333;
       }
     </style>
   </head>
@@ -66,8 +77,10 @@
     </section>
     <section>
       <h2>Interactive Section</h2>
+      <!-- Added label for better accessibility -->
+      <label for="userInput">Enter your text here:</label>
+      <input type="text" id="userInput" placeholder="Enter your text here" />
       <button onclick="alert('You clicked the button!')">Click me</button>
-      <input type="text" placeholder="Enter your text here" />
     </section>
     <footer>
       <p>&copy; 2023 AI-Generated Website. All rights reserved.</p>
