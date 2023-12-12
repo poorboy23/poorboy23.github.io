@@ -3,84 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI-Generated Website</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        color: #333;
-      }
-      header {
-        background: url("header-background.jpg") no-repeat center/cover;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-      nav {
-        background: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-      }
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        padding: 10px;
-        margin: 0 10px;
-      }
-      section {
-        padding: 20px;
-      }
-      footer {
-        background: #333;
-        padding: 10px;
-        text-align: center;
-        color: #fff;
-      }
-      label {
-        display: block;
-        margin-bottom: 5px;
-        color: #333; /* Adjusted label text color for better contrast */
-      }
-      h1, h2, p {
-        color: #333;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Your Website</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to Our Website</h1>
-      <p>Discover Amazing Content!</p>
+      <h1>Your Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-    <section>
-      <h2>Featured Video</h2>
-      <video width="640" height="360" controls>
-        <source src="featured-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
-    <section>
-      <h2>Text Description</h2>
-      <p>
-        This is a brief description of the content on the website. Feel free to
-        explore and learn more about our offerings.
-      </p>
-    </section>
-    <section>
-      <h2>Interactive Section</h2>
-      <label for="userInput">Enter your text here:</label>
-      <input type="text" id="userInput" placeholder="Enter your text here" />
-      <button onclick="alert('You clicked the button!')">Click me</button>
-    </section>
+    <main>
+      <section class="hero">
+        <h2>Welcome to Your Website</h2>
+        <p>This is a sample website with various features.</p>
+        <button onclick="showVideo()">Play Video</button>
+      </section>
+      <section class="content">
+        <!-- Add text, images, buttons, etc. here -->
+      </section>
+      <section class="filters">
+        <label for="search">Search:</label>
+        <input type="text" id="search" placeholder="Search..." />
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="date">Date</option>
+          <option value="popularity">Popularity</option>
+        </select>
+      </section>
+    </main>
     <footer>
-      <p>&copy; 2023 AI-Generated Website. All rights reserved.</p>
+      <p>&copy; 2023 Your Website. All rights reserved.</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
